@@ -14,11 +14,12 @@
 	<h2> This is my "Vertial" login form </h2>
 
 	<form>
-		<div class="form-group">
+		<div class="form-group" >
 			<label for="inputUserName">Username</label>
+					
 			<input class="form-control" type="text" id="inputUserName"/>
 		</div>
-		
+
 		<div class="form-group">
 			<label for="inputPassword">Password</label>
 			<input class="form-control" type="text" id="inputPassowrd"/>
