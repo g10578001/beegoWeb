@@ -2,9 +2,10 @@ package main
 
 import (
 	_ "beegoWeb/test/regis/routers"
+	"fmt"
 
 	"github.com/astaxie/beego"
-	"github.com/astaxie/begoo/orm"
+	"github.com/astaxie/beego/orm"
 	_ "github.com/mattn/go-sqlite3"
 )
 
