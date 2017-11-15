@@ -1,7 +1,9 @@
 package main
 
 import (
-	_ "beegoWeb/test/regis/routers"
+	//_ "beegoWeb/test/regis/models"
+	//_ "beegoWeb/test/regis/routers"
+	"beegoWeb/test/regis/models"
 	"fmt"
 
 	"github.com/astaxie/beego"
@@ -10,18 +12,21 @@ import (
 )
 
 func main() {
-	user := new(modles.User)
-	user.Name = "JYW"
-	user.Email = "jyw@mail.com"
 
 	o := orm.NewOrm()
 	o.Using("default")
+
+	user := new(models.User)
+	user.Name = "JYW"
+	user.Email = "jyw@mail.com"
 
 	fmt.Println(o.Insert(user))
 	beego.Run()
 }
 
 func init() {
-	orm.RegisterDriver("sqlite3", orm.DRsqlite)
-	orm.RegisterDataBase("user", "regis.db")
+	orm.RegisterDriver("sqlite3", orm.DRSqlite)
+	orm.RegisterDataBase("default", "sqlite3", "regis.db")
+	//orm.RegisterDataBase("default", "sqlite3", "root:root@/orm_test?charset=utf8")
+
 }

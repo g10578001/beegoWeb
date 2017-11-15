@@ -1,19 +1,13 @@
-package 
+package models
 
-import {
-	"fmt"
-	"strconv"
-	"strings"
-	"time"
-	"github.com/astaxie/beego"
-	"gitgub.com/astaxie/beego/orm"
-}
+import (
+	"github.com/astaxie/beego/orm"
+)
 
-type User struct{
-		Id int 64
-		Name string `orm:"size(256):unique"`
-		Eamil String `orm:"size(256):unique"`
-	
+type User struct {
+	Id    int64
+	Name  string `orm:"size(256);unique"`
+	Email string `orm:"size(256);unique"`
 }
 
 func init() {
