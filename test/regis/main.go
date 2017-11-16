@@ -1,8 +1,6 @@
 package main
 
 import (
-	//_ "beegoWeb/test/regis/models"
-	//_ "beegoWeb/test/regis/routers"
 	"beegoWeb/test/regis/models"
 	"fmt"
 
@@ -27,6 +25,4 @@ func main() {
 func init() {
 	orm.RegisterDriver("sqlite3", orm.DRSqlite)
 	orm.RegisterDataBase("default", "sqlite3", "regis.db")
-	//orm.RegisterDataBase("default", "sqlite3", "root:root@/orm_test?charset=utf8")
-
 }

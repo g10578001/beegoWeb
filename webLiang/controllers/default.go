@@ -13,3 +13,7 @@ func (c *MainController) Get() {
 	c.Data["Email"] = "jcliang@cycu.org.tw"
 	c.TplName = "index.tpl"
 }
+
+func (c *MainController) Signup() {
+	c.TplName = "signup.tpl"
+}
