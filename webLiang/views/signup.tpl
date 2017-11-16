@@ -13,8 +13,8 @@
     <!-- Bootstrap core CSS -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="static/css/heroic-features.css" rel="stylesheet">
+    <!-- Custom styles for this template
+    <link href="static/css/heroic-features.css" rel="stylesheet"> -->
 	<link href="static/css/signup.css" rel="stylesheet">
 	
 
@@ -54,11 +54,11 @@
     </nav>
 
 	<!-- Add by me -->
-	<script type="text/javascript" src="http://www.clubdesign.at/floatlabels.js"></script>
+	<!-- <script type="text/javascript" src="http://www.clubdesign.at/floatlabels.js"></script> -->
 	<script src="static/js/signup.js"></script>
 	<div class="container">
 	        <div class="row centered-form">
-	       <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+	       <!-- <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4"> -->
 	        	<div class="panel panel-default">
 	        		<div class="panel-heading">
 				    		<h3 class="panel-title">Please sign up for Liang's beego web <small>It's free!</small></h3>
@@ -93,7 +93,7 @@
 				    	</div>
 		    		</div>
 	    		</div>
-	    	</div>
+	    	<!-- </div> -->
 	    </div>	
 	</div>
 

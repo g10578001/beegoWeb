@@ -1,5 +1,6 @@
 body{
   padding-top: 54px;
+  
 }
 
 @media (min-width: 992px) {
@@ -10,8 +11,6 @@ body{
 
 .centered-form{
 	margin-top: 60px;
-	
-
 }
 
 .centered-form .panel{
