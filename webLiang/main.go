@@ -17,11 +17,12 @@ func main() {
 	o.Using("default")
 
 	user := new(models.User)
-	user.Username = "g01"
-	user.Email = "g01@cycu.edu.tw"
-	user.Password = "123456"
-	o.Insert(user)
+	user.Username = "g02"
+	user.Email = "g02@cycu.edu.tw"
+	user.Password = "g02g02"
+	//o.Insert(user)
 	fmt.Println(o.Insert(user))
+
 	beego.Run()
 }
 

@@ -56,7 +56,7 @@
 	<!-- Add by me -->
 
 	<h1>Please sign up for Liang's beego web.</h1>
-	<form>
+	<form method="POST">
 		<div class="form-group">
 			<input class="form-control" type="text" id="inputUserName" placeholder="User Name"/>
 		</div>
