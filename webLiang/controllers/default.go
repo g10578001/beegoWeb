@@ -15,5 +15,5 @@ func (c *MainController) Get() {
 }
 
 func (c *MainController) Signup() {
-	c.TplName = "signup.tpl"
+	c.TplName = "signup2.tpl"
 }
