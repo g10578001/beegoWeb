@@ -15,10 +15,21 @@ func main() {
 	o := orm.NewOrm()  //宣告一個新的orm
 	o.Using("default") //選擇使用那一個資料庫，使用資料庫別名來作選擇
 
-	user := new(models.User) //宣告一個新的User結構
-	user.Name = "g03"
-	user.Email = "g03@cycu.edu.tw"
-	fmt.Println(o.Insert(user)) //Insert資料並印出訊息
+	/*user := new(models.User) //宣告一個新的User結構
+	//user.Name = "g03"
+	//user.Email = "g03@cycu.edu.tw"
+	//fmt.Println(o.Insert(user)) //Insert資料並印出訊息
+	*/
+	user := models.User{Name: "g03"}
+	err := o.Read(&user, "Name")
+	if err == orm.ErrNoRows {
+		fmt.Println("No result found.")
+	} else if err == orm.ErrMissPK {
+		fmt.Println("No primary key found.")
+
+	} else {
+		fmt.Println(user.Id, user.Name)
+	}
 	beego.Run()
 }
 
