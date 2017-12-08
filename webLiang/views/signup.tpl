@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Heroic Features - Start Bootstrap Template</title>
+    <title>Liang's Beego Web'</title>
 
     <!-- Bootstrap core CSS -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
@@ -64,7 +64,7 @@
 				    		<h3 class="panel-title">Please sign up for Liang's beego web <small>It's free!</small></h3>
 				 			</div>
 				 			<div class="panel-body">
-				    		<form role="form">
+				    		<form role="form" method="POST">
 				    					    				
 				    			<div class="form-group">
 				                	<input type="text" name="User_name" id="User_name" class="form-control input-sm" placeholder="User Name">
